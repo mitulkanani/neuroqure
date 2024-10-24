@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 const Navbar = () => {
   return (
     <div className="mx-auto w-full max-w-[1440px]">
-      <div className="mx-20 mt-10 flex items-center justify-between rounded-[10px] bg-lightBlue py-[18px]">
+      <div className="mx-5 mt-10 flex items-center justify-between rounded-[10px] bg-lightBlue py-[18px] xl:mx-20">
         <div>
           <Image
             src="/svg/logo.svg"

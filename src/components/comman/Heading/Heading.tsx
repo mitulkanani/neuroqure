@@ -3,11 +3,11 @@ import React from 'react';
 
 const Heading = ({ label, style }: HeadingProps) => {
   return (
-    <div
+    <h1
       className={`${style} font-Sora text-[56px] font-bold leading-[67.2px] text-darkBlack`}
     >
       {label}
-    </div>
+    </h1>
   );
 };
 
