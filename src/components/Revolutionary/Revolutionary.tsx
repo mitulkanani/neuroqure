@@ -33,7 +33,7 @@ const Revolutionary = () => {
                     alt="Revolutionary shield"
                     className="rounded-[10px]"
                   />
-                  <p className="text-lightBlack font-Roboto text-lg font-semibold leading-[27.9px]">
+                  <p className="font-Roboto text-lg font-semibold leading-[27.9px] text-lightBlack">
                     {label?.label}
                   </p>
                 </div>

@@ -1,8 +1,7 @@
-import React from 'react';
-import Heading from '../comman/Heading/Heading';
-import { Empoweringparents } from '@/utils/content';
+import { empoweringParents } from '@/utils/content';
 import Image from 'next/image';
 import Description from '../comman/description/Description';
+import Heading from '../comman/Heading/Heading';
 
 const EmpoweringParents = () => {
   return (
@@ -15,7 +14,7 @@ const EmpoweringParents = () => {
           />
         </div>
         <div className="grid grid-cols-1 gap-[25px] rounded-[10px] bg-lightBlue p-[35px] md:grid-cols-2 xl:grid-cols-3">
-          {Empoweringparents?.map((item, index) => (
+          {empoweringParents?.map((item, index) => (
             <div
               key={index}
               className="flex flex-col rounded-[10px] bg-white p-[30px]"
@@ -23,7 +22,7 @@ const EmpoweringParents = () => {
               <div className="flex flex-col gap-[19px]">
                 <div className="h-full max-h-[70px] w-full max-w-[70px] rounded-full bg-offlightBlue p-4">
                   <Image
-                    src={item?.icon}
+                    src={item?.img}
                     alt="icon"
                     width={38}
                     height={38}
