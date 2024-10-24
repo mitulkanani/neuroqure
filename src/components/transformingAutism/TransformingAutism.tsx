@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const TransformingAutism = () => {
   return (
-    <div className="mx-auto max-w-[1440px] px-5 py-[100px] xl:px-[150px]">
+    <div className="mx-auto max-w-[1440px] px-5 pt-[100px] xl:px-[150px]">
       <div className="flex flex-col justify-between gap-10 md:flex-row md:gap-0">
         <div className="flex flex-col gap-[43.67px]">
           <div className="flex flex-col gap-[20.33px]">

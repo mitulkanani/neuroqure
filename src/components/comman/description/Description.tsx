@@ -4,11 +4,10 @@ import React from 'react';
 const Description = ({ description, style }: DescriptionProps) => {
   return (
     <p
-      className={`${style} font-Roboto text-lg leading-[27px] text-lightBlack`}
+      className={`${style} text-lightBlack font-Roboto text-lg leading-[27px]`}
     >
       {description}
     </p>
   );
 };
-
 export default Description;

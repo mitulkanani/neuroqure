@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 
 const MakeOurTeam = () => {
   return (
-    <div className="w-full">
+    <div className="mt-[72px] w-full">
       <div className="flex flex-col gap-[61px] overflow-hidden bg-lightBlue pb-[70px] pt-[60px]">
         <div className="flex flex-col gap-[19.93px]">
           <div>
@@ -44,11 +44,11 @@ const MakeOurTeam = () => {
             breakpoints={{
               768: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 30,
               },
               1024: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 30,
               },
             }}
           >
