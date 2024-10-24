@@ -233,9 +233,9 @@ export const footerData = {
     },
   ],
 };
-export const Empoweringparents = [
+export const empoweringParents = [
   {
-    icon: '/svg/understandingNeuroQure.svg',
+    img: '/svg/understandingNeuroQure.svg',
     title:
       'Understanding NeuroQure: Your Partner in Early Autism Detection and Support',
     description:
@@ -243,7 +243,7 @@ export const Empoweringparents = [
     subtitle: 'Test ',
   },
   {
-    icon: '/svg/transformingHealthcare.svg',
+    img: '/svg/transformingHealthcare.svg',
     title:
       'Transforming Healthcare: Integrate NeuroQure’s Testing into Your Practice Today',
     description:
@@ -251,7 +251,7 @@ export const Empoweringparents = [
     subtitle: 'Incorporate ',
   },
   {
-    icon: '/svg/whyChooseNeuroQure.svg',
+    img: '/svg/whyChooseNeuroQure.svg',
     title:
       'Why Choose NeuroQure: Advanced Technology for Early Autism Detection',
     description:

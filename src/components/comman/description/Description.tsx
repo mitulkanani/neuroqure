@@ -4,7 +4,7 @@ import React from 'react';
 const Description = ({ description, style }: DescriptionProps) => {
   return (
     <p
-      className={`${style} text-lightBlack font-Roboto text-lg leading-[27px]`}
+      className={`${style} font-Roboto text-lg leading-[27px] text-lightBlack`}
     >
       {description}
     </p>
