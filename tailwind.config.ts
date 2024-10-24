@@ -12,6 +12,15 @@ const config: Config = {
         lightBlue: '#E6F6FE',
         darkBlue: '#0D6EFD',
         darkBlack: '#011632',
+        lightBlack: '#3C4959',
+        lightGray: '#6B7280',
+      },
+      backgroundColor: {
+        lightBlue: '#E6F6FE',
+        darkBlue: '#0D6EFD',
+        darkBlack: '#011632',
+        lightBlack: '#3C4959',
+        offlightBlue: '#25B4F8',
       },
       fontFamily: {
         Roboto: ['Roboto', 'sans-serif'],
