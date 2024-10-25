@@ -6,9 +6,9 @@ import Button from '../comman/Button/Button';
 
 const HeroSection = () => {
   return (
-    <div className="relative mx-auto w-full max-w-[1440px] px-5 xl:px-20">
+    <div className="relative mx-auto mb-[66px] w-full max-w-[1440px] px-5 sm:mb-[100px] md:mb-[160px] xl:mb-[251px] xl:px-20">
       <div className="flex w-full">
-        <div className="mb-[251px] mt-[183px] flex flex-col gap-[19px]">
+        <div className="mt-[80px] flex flex-col gap-[19px] md:mt-[183px]">
           <div className="flex flex-col gap-[7px]">
             <div className="w-full max-w-[605px]">
               <Heading label="Early Detection, Brighter Futures" />
@@ -33,7 +33,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <div className="absolute right-0 z-[-1] mt-[83px]">
+        <div className="absolute right-0 z-[-1] mt-[83px] hidden md:block">
           <Image
             src="/images/heroSection.png"
             alt="logo"
