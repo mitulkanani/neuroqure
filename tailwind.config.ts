@@ -14,6 +14,9 @@ const config: Config = {
         darkBlack: '#011632',
         lightBlack: '#3C4959',
         lightGray: '#6B7280',
+        steelBlue: '#6C7C90',
+        lavenderGray: '#E7E8F2',
+        azureBlue: '#0081FE',
       },
       backgroundColor: {
         lightBlue: '#E6F6FE',

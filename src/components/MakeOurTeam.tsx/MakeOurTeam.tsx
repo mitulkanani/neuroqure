@@ -12,13 +12,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const MakeOurTeam = () => {
   return (
-    <div className="mt-[72px] w-full">
-      <div className="flex flex-col gap-[61px] overflow-hidden bg-lightBlue pb-[70px] pt-[60px]">
-        <div className="flex flex-col items-center gap-[19.93px]">
+    <div className="mt-20 w-full md:mt-[72px]">
+      <div className="flex flex-col gap-10 overflow-hidden bg-lightBlue pb-[70px] pt-[60px] md:gap-[61px]">
+        <div className="flex flex-col items-center gap-5">
           <div className="flex flex-col items-end">
             <Heading
               label="Meet our Team"
-              style="!text-[42px] !leading-[52.5px] !font-semibold !text-center"
+              style="!text-[32px] !leading-[36px] md:!text-[42px] md:!leading-[52.5px] !font-semibold !text-center"
             />
             <div>
               <Image

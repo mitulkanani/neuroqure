@@ -14,7 +14,7 @@ const HeroSection = () => {
               <Heading label="Early Detection, Brighter Futures" />
             </div>
             <div className="flex w-full flex-col gap-[16.93px] md:max-w-[531px]">
-              <div>
+              <div className="hidden md:block">
                 <Image
                   src="/svg/heroBlueLine.svg"
                   alt="logo"
