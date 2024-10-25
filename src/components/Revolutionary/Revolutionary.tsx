@@ -7,20 +7,20 @@ import Description from '../comman/description/Description';
 
 const Revolutionary = () => {
   return (
-    <div className="mx-auto mt-[100px] w-full max-w-[1440px] px-5 xl:px-20">
-      <div className="flex justify-between gap-5 bg-lightBlue px-[108px] py-[55px]">
+    <div className="mx-auto mt-[50px] w-full max-w-[1440px] px-5 md:mt-[100px] xl:px-20">
+      <div className="flex flex-col items-center justify-center gap-5 bg-lightBlue px-5 py-[55px] md:justify-between lg:flex-row xl:px-[108px]">
         <Image
           src={'/images/baby.png'}
           width={414}
           height={444}
           alt="Revolutionary side img"
-          className="rounded-[10px]"
+          className=""
         />
-        <div className="flex w-full flex-col gap-[30px] md:max-w-[522px]">
+        <div className="flex w-full flex-col gap-[30px] lg:max-w-[522px]">
           <div className="flex flex-col gap-5">
             <Heading
               label={revolutionarySectionData?.title}
-              style="!text-[42px] !leading-[52.5px] font-semibold"
+              style="!text-[32px] md:!text-[42px] leading-[45px] !leading-[52.5px] font-semibold"
             />
             <Description description={revolutionarySectionData?.description} />
             <div className="flex flex-col gap-[15px]">

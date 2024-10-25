@@ -8,14 +8,23 @@ import Image from 'next/image';
 const LatestUpdate = () => {
   const { btnText, contentCards, description, title } = latestUpdateData;
   return (
-    <div className="mx-auto mb-[172px] mt-[103px] w-full max-w-[1440px] px-5 xl:px-20">
-      <div className="flex flex-col gap-[63px]">
-        <div className="flex items-center justify-between">
+    <div className="mx-auto mt-20 w-full max-w-[1440px] px-5 md:mt-[103px] xl:px-20">
+      <div className="flex flex-col gap-10 md:gap-[63px]">
+        <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
           <div className="flex flex-col gap-5">
-            <Heading
-              label={title}
-              style="!text-[42px] !leading-[52.5px] !font-semibold"
-            />
+            <div className="flex flex-col">
+              <Heading
+                label={title}
+                style="!text-[32px] !leading-[36px] md:!text-[42px] md:!leading-[52.5px] !font-semibold"
+              />
+              <Image
+                src="/svg/heroBlueLine.svg"
+                alt="logo"
+                width={600}
+                height={564}
+                className="hidden lg:block"
+              />
+            </div>
             <Description
               description={description}
               style="!text-lg !font-normal !leading-[27px]"
@@ -23,7 +32,7 @@ const LatestUpdate = () => {
           </div>
           <Button label={btnText} style="!text-nowrap" />
         </div>
-        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {contentCards?.slice(0, 4)?.map((card, cardIndex) => (
             <div
               key={cardIndex}

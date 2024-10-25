@@ -6,14 +6,14 @@ import Image from 'next/image';
 
 const TransformingAutism = () => {
   return (
-    <div className="mx-auto max-w-[1440px] px-5 pt-[100px] xl:px-[150px]">
-      <div className="flex flex-col justify-between gap-10 md:flex-row md:gap-0">
-        <div className="flex flex-col gap-[43.67px]">
+    <div className="mx-auto max-w-[1440px] px-5 pt-[50px] md:pt-[100px] xl:px-[150px]">
+      <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:justify-between md:gap-0">
+        <div className="flex flex-col gap-[33.67px] md:gap-[43.67px]">
           <div className="flex flex-col gap-[20.33px]">
             <div className="w-full md:max-w-[507px]">
               <Heading
                 label="Transforming Autism Diagnosis with Technology"
-                style="!leading-[52.5px]  !text-[42px] !font-semibold"
+                style="leading-[45px] md:!leading-[52.5px] !text-[32px] md:!text-[42px] !font-semibold"
               />
             </div>
             <div className="w-full md:max-w-[531px]">
@@ -25,7 +25,7 @@ const TransformingAutism = () => {
           </div>
           <Button label="Read More" style="!font-normal !leading-[24px]" />
         </div>
-        <div className="relative">
+        <div className="relative mr-[15px] md:mr-[30px]">
           <Image
             src="/svg/transformingAutism.svg"
             alt="logo"
@@ -37,7 +37,7 @@ const TransformingAutism = () => {
             alt="logo"
             width={413}
             height={362}
-            className="absolute -top-[30px] left-[30px] z-[-1]"
+            className="absolute -top-[15px] left-[15px] z-[-1] mr-[15px] md:-top-[30px] md:left-[30px]"
           />
         </div>
       </div>

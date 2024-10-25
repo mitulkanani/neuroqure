@@ -132,10 +132,12 @@ export const footerData = {
     description:
       'Subscribe to our newsletter for the latest updates on features and releases.',
     emailPlaceHolder: 'Email address',
+    submitIcon: '/svg/arrowWhite.svg',
     descriptionSecond:
       'By subscribing, you consent to our Privacy Policy and agree to receive updates.',
   },
-  logo: '',
+  logo: '/svg/logo.svg',
+  logoLink: '/',
   rights: '© 2024 NeuroQure. All rights reserved.',
   pages: [
     {
@@ -144,26 +146,32 @@ export const footerData = {
         {
           text: 'Home',
           link: '#',
+          icon: null,
         },
         {
           text: 'About Us',
           link: '#',
+          icon: null,
         },
         {
           text: 'FAQs',
           link: '#',
+          icon: null,
         },
         {
           text: 'Order Test',
           link: '#',
+          icon: null,
         },
         {
           text: 'Contact Us',
           link: '#',
+          icon: null,
         },
         {
           text: 'Recruiting',
           link: '#',
+          icon: null,
         },
       ],
     },
@@ -173,22 +181,27 @@ export const footerData = {
         {
           text: 'Email Us',
           link: '#',
+          icon: null,
         },
         {
           text: 'Call Us',
           link: '#',
+          icon: null,
         },
         {
           text: 'Support',
           link: '#',
+          icon: null,
         },
         {
           text: 'Feedback',
           link: '#',
+          icon: null,
         },
         {
           text: 'Help Center',
           link: '#',
+          icon: null,
         },
       ],
     },
@@ -198,22 +211,27 @@ export const footerData = {
         {
           text: 'Facebook',
           link: '#',
+          icon: '/svg/footerfb.svg',
         },
         {
           text: 'Instagram',
           link: '#',
+          icon: '/svg/footerinsta.svg',
         },
-        {
-          text: 'X',
-          link: '#',
-        },
+        // {
+        //   text: 'X',
+        //   link: '#',
+        //   icon: '/svg/footertwitter.svg',
+        // },
         {
           text: 'LinkedIn',
           link: '#',
+          icon: '/svg/footerlinkedin.svg',
         },
         {
           text: 'Youtube',
           link: '#',
+          icon: '/svg/footeryoutube.svg',
         },
       ],
     },

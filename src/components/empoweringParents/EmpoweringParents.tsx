@@ -5,19 +5,19 @@ import Heading from '../comman/Heading/Heading';
 
 const EmpoweringParents = () => {
   return (
-    <div className="mx-auto w-full max-w-[1440px] px-5 xl:px-20">
-      <div className="flex flex-col gap-[66px]">
+    <div className="mx-auto mt-20 w-full max-w-[1440px] px-5 xl:px-20">
+      <div className="flex flex-col gap-[33px] md:gap-[66px]">
         <div className="mx-auto w-full max-w-[872px]">
           <Heading
             label="Empowering Parents with Early Autism Detection: A Lifeline for Your Child"
-            style="!text-[42px]  !leading-[52.5px] !font-semibold !text-center"
+            style="!text-[32px] md:!text-[42px]  !leading-[36px] md:!leading-[52.5px] !font-semibold !text-center"
           />
         </div>
-        <div className="grid grid-cols-1 gap-[25px] rounded-[10px] bg-lightBlue p-[35px] md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-[25px] rounded-[10px] bg-lightBlue p-5 md:grid-cols-2 md:p-[35px] xl:grid-cols-3">
           {empoweringParents?.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col rounded-[10px] bg-white p-[30px]"
+              className="flex flex-col rounded-[10px] bg-white p-5 md:p-[30px]"
             >
               <div className="flex flex-col gap-[19px]">
                 <div className="h-full max-h-[70px] w-full max-w-[70px] rounded-full bg-offlightBlue p-4">
@@ -32,7 +32,7 @@ const EmpoweringParents = () => {
                 <div className="flex flex-col gap-[11px]">
                   <Heading
                     label={item?.title}
-                    style="!text-[24px] !font-normal  !leading-[28.8px]"
+                    style="!text-xl md:!text-[24px] !font-normal  md:!leading-[28.8px]"
                   />
                   <Description
                     description={item?.description}

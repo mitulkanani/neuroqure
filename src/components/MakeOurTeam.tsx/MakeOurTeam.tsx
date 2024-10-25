@@ -4,21 +4,31 @@ import Heading from '../comman/Heading/Heading';
 import Description from '../comman/description/Description';
 import { Meetourteam, socialicons } from '@/utils/content';
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const MakeOurTeam = () => {
   return (
-    <div className="mt-[72px] w-full">
-      <div className="flex flex-col gap-[61px] overflow-hidden bg-lightBlue pb-[70px] pt-[60px]">
-        <div className="flex flex-col gap-[19.93px]">
-          <div>
+    <div className="mt-20 w-full md:mt-[72px]">
+      <div className="flex flex-col gap-10 overflow-hidden bg-lightBlue pb-[70px] pt-[60px] md:gap-[61px]">
+        <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-end">
             <Heading
               label="Meet our Team"
-              style="!text-[42px] !leading-[52.5px] !font-semibold !text-center"
+              style="!text-[32px] !leading-[36px] md:!text-[42px] md:!leading-[52.5px] !font-semibold !text-center"
             />
+            <div>
+              <Image
+                src="/svg/heroBlueLine.svg"
+                alt="logo"
+                width={216}
+                height={10}
+                className=""
+              />
+            </div>
           </div>
           <div>
             <Description
@@ -27,40 +37,30 @@ const MakeOurTeam = () => {
             />
           </div>
         </div>
-        <div className="mx-auto flex max-w-[1440px] gap-[29px]">
+
+        <div className="mx-auto max-w-[1440px]">
           <Swiper
-            slidesPerView={1}
-            pagination={{
-              el: '.custom-swiper-pagination',
-              clickable: true,
-            }}
+            id="homeSwiper"
+            className="makeourteamswiper mx-5"
+            slidesPerView={'auto'}
+            loop
+            draggable={true}
+            freeMode={true}
+            speed={700}
+            spaceBetween={20}
             navigation={{
-              prevEl: '.swiper-button-prev',
               nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
             }}
-            modules={[Pagination, Autoplay, Navigation]}
-            draggable
-            spaceBetween={30}
-            breakpoints={{
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
+            modules={[EffectFade, Navigation, Pagination]}
+            onInit={(swiper) => {
+              swiper?.navigation?.init();
+              swiper?.navigation?.update();
             }}
           >
             {Meetourteam?.map((item, index) => (
-              <SwiperSlide
-                key={index}
-                className="!h-auto !w-full max-w-[413px]"
-              >
-                <div
-                  key={index}
-                  className="flex h-full w-full flex-col justify-between gap-[15.85px] rounded-[10px] bg-white p-[30px]"
-                >
+              <SwiperSlide key={index} className="!h-auto !w-fit">
+                <div className="flex h-full w-full max-w-[413px] flex-col justify-between gap-[15.85px] rounded-[10px] bg-white p-[30px]">
                   <div className="flex flex-col gap-[31.93px]">
                     <div className="flex items-center gap-[10px]">
                       <div>
